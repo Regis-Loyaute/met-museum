@@ -1,0 +1,7 @@
+version: '3'
+services:
+  web:
+    image: reeeeegis/met-museum
+    ports:
+      - "80:80"
+    command: nginx -g "daemon off;"
