@@ -49,7 +49,7 @@ const ArticlePage = () => {
         <div className="flex flex-col gap-2">
           <div className="flex gap-2 items-center">
             <p className="text-xl">
-              {article.isHighlight ? <BsStarFill color="green" /> : <BsStar />}
+              {article.isHighlight ? <BsStarFill color="black" /> : <BsStar />}
             </p>
             <h2 className="font-semibold text-xl">{article?.title}</h2>
           </div>
