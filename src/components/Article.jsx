@@ -58,9 +58,10 @@ const Article = ({ article }) => {
       <Link to={`/${article.objectID}`}>
         <ImageContainer
           role="img"
+          className="w-full max-h-[500px] object-cover"
           src={
             article?.primaryImage ||
-            "https://www.pannier.com/wp-content/uploads/article-icon-png-27.png"
+            "https://clipground.com/images/loading-png-10.png"
           }
           alt={article?.title}
         />

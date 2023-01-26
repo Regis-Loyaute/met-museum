@@ -37,6 +37,7 @@ const Header = () => {
   `;
 
   return (
+<<<<<<< HEAD
     <HeaderContainer role="contentinfo" className="flex gap-2 items-center">
       {!searchBar && (
         <nav className="flex gap-4 items-center flex-grow justify-end">
@@ -45,6 +46,23 @@ const Header = () => {
           </button>
           <NavLink to="/">Home</NavLink>
           <NavLink to="/advanced-search">Advanced search</NavLink>
+=======
+    <header
+      role="contentinfo"
+      className="flex border-b gap-2 items-center p-4 sticky top-0 bg-white shadow-2xl shadow-gray-50"
+    >
+      {!searchBar && (
+        <nav className="flex gap-4 items-center flex-grow justify-end">
+          <Link to="/">
+            <p className="text-lg font-semibold">Home</p>
+          </Link>
+          <Link to="/advanced-search">
+            <p className="text-lg font-semibold">Advanced search</p>
+          </Link>
+          <button role="button" onClick={handleSearchBar} className="text-xl">
+            <FiSearch />
+          </button>
+>>>>>>> 6264e1c175901b2262761f90ec7447e2dd95cd32
         </nav>
       )}
       {searchBar && <Search handleSearchBar={handleSearchBar} />}
