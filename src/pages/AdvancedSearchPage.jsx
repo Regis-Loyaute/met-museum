@@ -4,6 +4,7 @@ import AdvancedFilters from "../components/AdvancedFilters";
 import { GrSearch } from "react-icons/gr";
 import axios from "../api/axios";
 import Article from "../components/Article";
+import Header from "../components/Header";
 
 const AdvancedSearchPage = () => {
   const [filters, setFilters] = useState();
@@ -81,6 +82,9 @@ const AdvancedSearchPage = () => {
     setFilters(false);
   };
   return (
+    <div>
+    {true && <Header />}
+  
     <main className="p-4">
       <header className="">
         <form
@@ -143,6 +147,7 @@ const AdvancedSearchPage = () => {
         "Loading..."
       )}
     </main>
+    </div>
   );
 };
 
